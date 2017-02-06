@@ -1,8 +1,4 @@
-						Data Communications -  I
-					        Programming Assignment 1
-Name : Harshal Shah
-ITP-NE, Fall 2016
-Date - 10/22/2016
+
 
 Objective : Implementing a simple HTTP server
 
