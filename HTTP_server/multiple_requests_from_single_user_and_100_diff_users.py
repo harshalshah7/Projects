@@ -1,8 +1,16 @@
+##################################################################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
+#Date: Aug 2016
+##################################################################################################################
 import socket
 import sys
 from time import sleep
 import time
 import threading
+
 def multiple(msg, client, a,l):
     data=client.recv(4096)
     data=data.decode()
@@ -10,6 +18,7 @@ def multiple(msg, client, a,l):
     m=time.time()
     print("Thread for handling handling multiple files: {}\nStart time: {}\nEnd time: {}\nTime taken to handle the request: {}".format(a, l ,m,(m-l)))
     return(0)
+
 def single(msg, client, b, x):
     data=client.recv(4096)
     data=data.decode()
@@ -17,6 +26,8 @@ def single(msg, client, b, x):
     y=time.time()
     print("Thread for handling handling single file: {}\nStart time: {}\nEnd time: {}\nTime taken to handle the request: {}".format(b, x ,y,(y-x)))
     return(0)
+
+'''main program starts here'''
 host='127.0.0.1'
 port=8000
 backlog=5
@@ -24,12 +35,10 @@ threadlist=[]
 try:
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
     client.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    client.connect((host,port))
-    
+    client.connect((host,port))  
 except socket.error():    
     print("not possible to listen")
     sys.exit()
-
 a=0
 for i in range (0,100):
     a = a+1
@@ -63,9 +72,6 @@ for i in range(0,100):
         print(len(threadlist)) 
         print("Active ", threading.active_count())
         sleep(0.01)
-        
-        
-        
     except Exception as e:
         print(e)
         print("sorry")    
