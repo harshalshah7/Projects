@@ -1,8 +1,12 @@
-#author: Harshal Shah Harshal.Shah@colorado.edu
-#name: file1.py
+############################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
 #purpose: Create a two linegraph with data from the states csv on the census.gov web site.Also use prettytables to print on the terminal.    
 #date: 11/06/2016
-#version: 9.1
+############################################################################
+
 try:
     import sys
     import os
@@ -15,7 +19,6 @@ except:
     sys.exit()
 mfg=[]
 mgg=[]
-m=0
 list1=[]
 list2=[]
 list3=[]
@@ -25,6 +28,7 @@ list6=[]
 xaxis1=[]
 xaxis2=[]
 xaxis3=[]
+m=0
 
 try:
     r=requests.get("https://www.census.gov/popest/data/counties/totals/2011/tables/CO-EST2011-01-08.csv")
@@ -32,7 +36,6 @@ except:
     print("Requested url does not exist and/or Check your Internet Connection")
     sys.exit()
 abc=r.text
-
 try:
     abc=abc.splitlines()
     n=len(abc)
