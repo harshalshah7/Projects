@@ -1,8 +1,11 @@
-#author : Harshal Shah  Harshal.Shah@colorado.edu
-#name :file1.py
+###################################################################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
 #purpose : Create a GUI with 3 buttons
 #date : 11/14/2016
-#version :10.1
+####################################################################################################################
 try:
     from tkinter import *
     from bs4 import BeautifulSoup
@@ -23,7 +26,7 @@ def endwindow():
 
 def readIP(x):
     try:
-        ip_name=gethostbyname('www.colorado.edu') 
+        ip_name=gethostbyname('www.colorado.edu')                                  #can be provided by a user as well using input()
         xyz= "the Ip address of www.colorado.edu is: " + ip_name + "\n"
         t.insert("1.0", str(xyz)) 
     except:
