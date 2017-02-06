@@ -1,8 +1,11 @@
-#author: Harshal Shah Harshal.Shah@colorado.edu
-#name: file2.py
-#purpose:Create a bar graph of the state and their population 
-#date: 10/26/2016
-#version: 8.2
+##################################################################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
+# #date: 10/26/2016
+#purpose:Create a bar graph of the state and their population
+##################################################################################################################
 import sys
 import matplotlib.pyplot as plt
 import numpy as np
