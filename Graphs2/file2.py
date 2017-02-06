@@ -1,8 +1,11 @@
-#author: Harshal Shah Harshal.Shah@colorado.edu
-#name: file2.py
+############################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
 #purpose: Create a two line graph with data from pinging two hosts
 #date: 11/06/2016
-#version: 9.2
+############################################################################
 try:
     import sys
     import os
@@ -16,18 +19,19 @@ except:
     sys.exit()
 xyz=[]
 abc=[]
+
 def Checkargs1():
     if (len(sys.argv) != 1):
         if (len(sys.argv) != 2):
             print("Please provide proper arguments:\nUsage:<filename.py> <output_filename/optional>")
             sys.exit()
+
 def Checkargs():
     if (len(sys.argv)== 2):
         return(1)
     else: 
-        
         return(0)
-           
+    
 Checkargs1()        
 for i in range (0,50):
     try:
@@ -40,8 +44,7 @@ for i in range (0,50):
     b=a[8].split("=")
     c=b[3].split("ms")
     print(c[0])
-    xyz.append(c[0])
-    
+    xyz.append(c[0])    
 for i in range (0,50):
     try:
         response1=subprocess.check_output(["ping", "4.2.2.1"], stderr=subprocess.STDOUT, universal_newlines=True)
@@ -82,5 +85,4 @@ plt.legend(['Line 1', 'Line 2'], loc='upper left')
 plt.xticks(range(50), range(50), rotation="vertical")
 plt.savefig("filename1.png")
 plt.show()
- 
 sys.exit()
