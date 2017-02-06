@@ -1,3 +1,10 @@
+################################################################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
+#Date: Sept 2016
+################################################################################################################
 #!/usr/bin/env python 
 import socket
 import threading
@@ -10,6 +17,7 @@ def shutit():
             input()
         except Exception:
             os._exit(1)
+
 def thred(client, address, timer):
     while True:                                                   #receive request
         try :                                                                                       
@@ -24,8 +32,7 @@ def thred(client, address, timer):
                 #heads=heads.encode()
                 client.send(heads.encode()+msg)
                 client.close()
-                break
-                        
+                break           
             if data[0] == 'GET':
                 lmn=0
                 mmm=0
@@ -136,7 +143,6 @@ def get(client, data, root, abc):                                               
                         fh=open(root+'501Error.html', 'rb')
                         msg=fh.read()
                         heads=data[2] + " 501 Not Implemented: File not Supported\nContent-Type: text/html\n\n"
-#                         heads=heads.encode()
                         client.send(heads.encode()+msg)
                         client.close()
                         return(0) 
@@ -144,7 +150,6 @@ def get(client, data, root, abc):                                               
                     fh=open(root+'404Error.html', 'rb')
                     msg=fh.read()
                     heads=data[2] + " 404 Not Found Requested URL does not exist\nContent-Type: text/html\n\n"
-#                     heads=heads.encode()
                     client.send(heads.encode()+msg)
                     client.close()
                     return(0)
@@ -152,21 +157,18 @@ def get(client, data, root, abc):                                               
                 fh=open(root+'400Error.html', 'rb')
                 msg=fh.read()
                 heads=data[2] + " 400 Bad Request: Invalid URL\nConten-Type: text/html\n\n"
-#                 heads=heads.encode()
                 client.send(heads.encode()+msg)
                 client.close()
-                return(0)
-               
+                return(0)    
         except :
             fh=open(root+'500Error.html', 'rb')
             msg=fh.read()
             heads=data[2] + " 500 Internal Server Error\nContent-Type: text/html\n\n"
-#             heads=heads.encode()
             client.send(heads.encode()+msg)
             client.close()
             return(0)
-        return(1)
-    
+        return(1)  
+
 '''main prog starts here'''
 
 try: 
