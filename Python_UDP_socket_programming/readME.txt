@@ -1,9 +1,3 @@
-						Data Communications -  I
-					        Programming Assignment 1
-Name : Harshal Shah
-ITP-NE, Fall 2016
-Date - 09/22/2016
-
 Objective : Transferring content and messages between a	Client and a Server using Sockets.
 
 Note : 	    This program was written using Python v3.5
