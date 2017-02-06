@@ -1,0 +1,262 @@
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+
+
+
+
+>> This is oour test file.
+>>Content is not at all important
+
+>>wireshark
+>>bgp
+Assignement 1>>
+udp socket prog
+C           >             S (it create socket nad than u bind itand pass some packet)
+(same)
+put file_name(send)(c to s) > open and than send throught the socket.
+get file_name
+list 
+exit
+
+
+
+
+how to add reliability? 
+add sequence no 
+and send a duplicate packet as well with the same sequence no.
+timers 
+positive ack maybe
+improve efficiency.... Stop n waitX, go back NY to decide NX, selective repest protocol .. gradually go on increasing the throughput to check the max capacity, (keep the pipe full to imporve eff) ( dont just snd only 1 packet at a time)
+>>link layer implementation - ethernet, PCMCIA , 802.11 card
+>>sentinel based
+probabilty of error loss.. 500 mac 100 mc
+>> how to recover from losses-- retransmission
+>> 
+
+
+
