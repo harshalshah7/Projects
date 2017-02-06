@@ -1,3 +1,10 @@
+###############################################################################################################
+# Copyrights 2016 Harshal Shah All Rights Reserved
+# The information contained herein is property of the Authors.
+# The copying and distribution of the files is prohibited except by express written agreement with the Authors.
+# Authors: Harshal Shah
+#Date: Aug 2016
+###############################################################################################################
 import socket
 import sys
 import os
